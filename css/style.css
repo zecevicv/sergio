@@ -9,6 +9,10 @@ body {
   font-family: 'Heebo', sans-serif!important;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 @media (max-width: 1023.98px) {
   body {
     padding-top: 25.33vw;
@@ -1305,6 +1309,152 @@ body {
   }
   
   .gallery .tab-panel p {
+    margin-bottom: 2vw;
+  }
+}
+
+/* #Success Stories Heading
+================================================== */
+.success-stories-heading {
+  padding: 3.125vw 0 6.5vw 0;
+  text-align: center;
+}
+
+@media (max-width: 1023.98px) {
+  .success-stories-heading {
+    padding: 7.2vw 0 12vw 0;
+  }
+
+  .success-stories-heading .container {
+    width: 73.33%;
+  }
+}
+
+/* #Media Boxes
+================================================== */
+.media-box {
+  display: flex;
+}
+
+.media-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.media-box .img,
+.media-box .text {
+  flex: 0 0 50%;
+}
+
+.media-box .img img {
+  width: 100%;
+  height: 56.25vw;
+  object-fit: cover;
+  object-position: centar;
+}
+
+.media-box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.media-box .text > div {
+  width: 24vw;
+}
+
+.media-box .text p {
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .media-box {
+    display: block;
+  }
+  
+  .media-box .img img {
+    height: 126vw;
+  }
+  
+  .media-box .text {
+    padding: 8vw 0 29.33vw 0;
+  }
+  
+  .media-box .text > div {
+    width: 88%;
+  }
+  
+  .media-box .text p {
+    margin-bottom: 1.33vw;
+  }
+}
+
+/* #Course Enrollment
+================================================== */
+.course-enrollment {
+  position: relative;
+}
+
+.course-enrollment .img img,
+.course-enrollment .img picture {
+  width: 100%;
+}
+
+.course-enrollment .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7.3vw;
+  width: 30.83vw;
+  text-align: center;
+}
+
+.course-enrollment h2 {
+  line-height: 1;
+  margin-bottom: .75vw;
+}
+
+.course-enrollment p.ultra-bold {
+  margin-top: .78vw;
+}
+
+.course-enrollment .btns {
+  margin-top: .78vw;
+}
+
+.course-enrollment .btns .btn:first-child {
+  margin-left: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .course-enrollment .text {
+    top: auto;
+    bottom: 15.33vw;
+    transform: translateX(-50%);
+    right: auto;
+    left: 50%;
+    width: 78.93%;
+    text-align: center;
+  }
+  
+  .course-enrollment h2 {
+    margin-bottom: 2vw;
+  }
+  
+  .course-enrollment p.ultra-bold {
+    margin-top: 2vw;
+  }
+  
+  .course-enrollment .btns {
+    display: flex;
+    flex-direction: column;
+    width: 48vw;
+    margin: 0 auto;
+    margin-top: 4vw;
+  }
+  
+  .course-enrollment .btns .btn:first-child {
+    margin-left: 0;
     margin-bottom: 2vw;
   }
 }

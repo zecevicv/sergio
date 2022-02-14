@@ -1937,3 +1937,34 @@ body {
     margin-top: 1.33vw!important;
   }
 }
+
+/* #Text Page
+================================================== */
+.text-page-content {
+  padding: 3.125vw 0 7vw 0;
+}
+
+.text-page-content .container {
+  width: 48.9%;
+}
+
+.text-page-content h1 {
+  text-align: center;
+  margin-bottom: 2vw;
+  line-height: 1;
+}
+
+@media (max-width: 1023.98px) {
+  .text-page-content {
+    padding: 7.33vw 0 15.33vw 0;
+    text-align: center;
+  }
+  
+  .text-page-content .container {
+    width: 88.5%;
+  }
+  
+  .text-page-content h1 {
+    margin-bottom: 4vw;
+  }
+}

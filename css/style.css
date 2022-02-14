@@ -1658,3 +1658,49 @@ body {
     margin-bottom: 2vw;
   }
 }
+
+/* #Error
+================================================== */
+.error {
+  position: relative;
+}
+
+.error .img img,
+.error .img picture {
+  width: 100%;
+}
+
+.error .text {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.error h1,
+.error h2 {
+  line-height: 1;
+}
+
+.error p {
+  margin: .5vw 0 1.25vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .error .text {
+    top: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .error h1,
+  .error h2 {
+    line-height: 1;
+  }
+  
+  .error p {
+    margin: 1vw 0 4vw 0;
+  }
+}

@@ -1458,3 +1458,203 @@ body {
     margin-bottom: 2vw;
   }
 }
+
+/* #Recommend Heading
+================================================== */
+.recommend-heading {
+  padding: 1.8vw 0 3.125vw 0;
+  text-align: center;
+}
+
+@media (max-width: 1023.98px) {
+  .recommend-heading {
+    padding: 7.33vw 0;
+  }
+
+  .recommend-heading .container {
+    width: 73%;
+  }
+}
+
+/* #Recommend
+================================================== */
+.recommend {
+  padding-bottom: 5.2vw;
+}
+
+.recommend .container {
+  width: 85%;
+}
+
+/* Tab Navigation */
+.recommend .tab-navigation {
+  margin-bottom: 4.16vw;
+  display: flex;
+  justify-content: center;
+}
+
+.recommend .tab-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 18.23vw;
+  margin: 0 -.25vw;
+}
+
+.recommend .tab-btn {
+  height: 2.44vw;
+  border: 3px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 .46vw;
+  margin: 0 .25vw;
+  font-weight: 900;
+  border-radius: 4px;
+  margin-bottom: .5vw;
+}
+
+.recommend .tab-btn.active {
+  color: white;
+  background-color: black;
+}
+
+/* Recommend Cards */
+.recommend-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -5.2vw;
+}
+
+.recommend-card {
+  flex: 0 0 33.333333%;
+  padding: 0 1vw;
+  margin-bottom: 5.2vw;
+}
+
+.recommend-card .img {
+  position: relative;
+  margin-bottom: 1.7vw;
+}
+
+.recommend-card .img > img {
+  width: 100%;
+  height: 27vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recommend-card .img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.recommend-card .img a img {
+  width: 3.75vw;
+}
+
+.recommend-card h2 {
+  margin-bottom: 1.8vw;
+}
+
+.recommend-card h2 img {
+  display: inline-block;
+  width: 1.5vw;
+  margin-left: .3vw;
+}
+
+.recommend-card .btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .75vw;
+}
+
+.recommend-card .btns a {
+  height: 2.2vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #E9E9E9;
+  border-radius: 5px;
+  padding: 0 .625vw;
+  margin-left: .5vw;
+  margin-bottom: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .recommend {
+    padding-bottom: 16vw;
+  }
+  
+  .recommend .container {
+    width: 88.5%;
+  }
+
+  /* Tab Navigation */
+  .recommend .tab-navigation {
+    margin-bottom: 13.33vw;
+  }
+  
+  .recommend .tab-navigation ul {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .recommend .tab-btn {
+    height: 10.4vw;
+    padding: 0 3.6vw;
+    margin: 0 1vw;
+    margin-bottom: 2vw;
+  }
+
+  /* Recommend Cards */
+  .recommend-cards {
+    margin-bottom: -16vw;
+    display: block;
+  }
+
+  .recommend-card {
+    padding: 0;
+    margin-bottom: 16vw;
+  }
+
+  .recommend-card .img {
+    margin-bottom: 6.93vw;
+  }
+
+  .recommend-card .img > img {
+    height: 88.53vw;
+  }
+
+  .recommend-card .img a img {
+    width: 17vw;
+  }
+
+  .recommend-card h2 {
+    line-height: 1.1;
+    margin-bottom: 4vw;
+  }
+
+  .recommend-card h2 img {
+    display: block;
+    width: 5.6vw;
+    margin-left: 0;
+    margin-bottom: 2vw;
+  }
+
+  .recommend-card .btns {
+    margin-top: 2vw;
+  }
+
+  .recommend-card .btns a {
+    height: 8vw;
+    padding: 0 2vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+  }
+}

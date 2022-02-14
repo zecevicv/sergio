@@ -1704,3 +1704,236 @@ body {
     margin: 1vw 0 4vw 0;
   }
 }
+
+/* #Contact
+================================================== */
+.contact {
+  display: flex;
+}
+
+.contact .text,
+.contact .img {
+  flex: 0 0 50%;
+}
+
+.contact .img img {
+  width: 100%;
+  height: 48.91vw;
+  object-fit: cover;
+  object-position: centar;
+}
+
+.contact .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 7.29vw 0 5.72vw; 
+}
+
+.contact .text .top,
+.contact .text .bottom {
+  display: flex;
+}
+
+.contact .text .top {
+  align-items: center;
+  margin-bottom: 2.6vw;
+}
+
+.contact .text .top h1 {
+  line-height: 1;
+}
+
+.contact .text .top > div:nth-child(2) {
+  padding-left: .5vw;
+}
+
+.contact .text .top > div:nth-child(1),
+.contact .text .bottom > div:nth-child(1) {
+  flex: 0 0 21.51vw;
+}
+
+.contact .text .top > div:nth-child(2),
+.contact .text .bottom > div:nth-child(2) {
+  flex: 0 0 15.41vw;
+}
+
+.contact .text .input-primary,
+.contact .text .select-primary {
+  margin-bottom: 1.35vw;
+}
+
+.contact .text h2 {
+  margin-bottom: .78vw;
+}
+
+.contact .text .btn {
+  margin-top: .6vw;
+}
+
+.contact .text .bottom > div:nth-child(1) p {
+  width: 11.45vw;
+}
+
+.contact .text .bottom > div:nth-child(1) a {
+  text-decoration: underline;
+  margin-bottom: 1vw;
+  display: inline-block;
+}
+
+.contact .text .bottom > div:nth-child(1) a img {
+  display: inline-block;
+  vertical-align: middle;
+  width: .93vw;
+}
+
+.contact .social {
+  margin-top: 1.15vw;
+}
+
+.contact .social ul {
+  display: flex;
+  align-items: center;
+}
+
+.contact .social a {
+  margin-bottom: 0!important;
+}
+
+.contact .social ul li:not(:last-child) {
+  margin-left: .67vw;
+}
+
+.contact .social img {
+  width: 1vw;
+  height: 1vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.contact .hours {
+  margin-bottom: 1.15vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    flex-direction: column-reverse;
+    margin-bottom: 13.33vw;
+  }
+  
+  .contact .text,
+  .contact .img {
+    flex: 0;
+  }
+
+  .contact .img {
+    margin-bottom: 13.33vw;
+  }
+  
+  .contact .img img {
+    height: 83.86vw;
+  }
+  
+  .contact .text {
+    display: block;
+    padding: 0 10vw; 
+    text-align: center;
+  }
+
+  .contact h1 {
+    margin-bottom: 2vw;
+  }
+  
+  .contact .text .top {
+    display: block;
+    padding: 0 7.33vw;
+  }
+
+  .contact .text .bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .contact .text .top {
+    align-items: center;
+    margin-bottom: 13.33vw;
+  }
+  
+  .contact .text .top h1 {
+    line-height: 1;
+  }
+  
+  .contact .text .top > div:nth-child(2) {
+    padding-left: 0;
+  }
+  
+  .contact .text .top > div:nth-child(1),
+  .contact .text .bottom > div:nth-child(1) {
+    flex: 0;
+  }
+  
+  .contact .text .top > div:nth-child(2),
+  .contact .text .bottom > div:nth-child(2) {
+    flex: 0;
+  }
+
+  .contact .text .bottom > div:nth-child(2) {
+    margin-bottom: 18vw;
+  }
+  
+  .contact .text .input-primary,
+  .contact .text .select-primary {
+    margin-bottom: 4vw;
+  }
+  
+  .contact .text h2 {
+    margin-bottom: .78vw;
+  }
+
+  .contact .text .bottom > div:nth-child(2) h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .contact .text .btn {
+    margin-top: 6vw;
+  }
+  
+  .contact .text .bottom > div:nth-child(1) p {
+    width: 68.66vw;
+    margin: 0 auto;
+  }
+  
+  .contact .text .bottom > div:nth-child(1) a {
+    margin-bottom: 13.33vw;
+  }
+  
+  .contact .text .bottom > div:nth-child(1) a img {
+    width: 4vw;
+  }
+  
+  .contact .social {
+    margin-top: 7vw;
+  }
+  
+  .contact .social ul {
+    justify-content: center;
+  }
+  
+  .contact .social a {
+    margin-bottom: 0!important;
+  }
+  
+  .contact .social ul li:not(:last-child) {
+    margin-left: 5.33vw;
+  }
+  
+  .contact .social img {
+    width: 4vw!important;
+    height: 4vw!important;
+  }
+  
+  .contact .hours {
+    margin-bottom: 2vw!important;
+    margin-top: 1.33vw!important;
+  }
+}

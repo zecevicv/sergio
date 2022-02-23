@@ -31,3 +31,32 @@ AOS.init({
   duration: 800,
   offset: 300,
 });
+
+/* #Blog Slider
+  ======================================================= */
+  const blogSliders = document.querySelectorAll('.blog-slider');
+
+  if (blogSliders) {
+    blogSliders.forEach((blogSlider) => {
+      const sliderEl = blogSlider.querySelector('.swiper');
+      const sliderPagination = blogSlider.querySelector('.swiper-pagination');
+  
+      new Swiper(sliderEl, {
+        breakpoints: {
+          0: {
+            slidesPerView: 1.128
+          },
+          1024: {
+            slidesPerView: 3.25
+          },
+        },
+        pagination: {
+          el: sliderPagination,
+          type: "progressbar",
+        },
+        
+      });
+  
+  
+    });
+  }

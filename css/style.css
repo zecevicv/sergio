@@ -21,6 +21,19 @@ body {
 
 /* #Buttons
 ================================================== */
+
+/* Link */
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link img {
+  width: .5vw;
+  margin-right: .5vw;
+}
+
+/* Btn */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -179,6 +192,14 @@ body {
 }
 
 @media (max-width: 1023.98px) {
+
+  /* Link */
+  .link img {
+    width: 2vw;
+    margin-right: 2.66vw;
+  }
+
+  /* Btn */
   .btn {
     height: 9.46vw;
     font-size: 3.33vw;
@@ -1966,5 +1987,315 @@ body {
   
   .text-page-content h1 {
     margin-bottom: 4vw;
+  }
+}
+
+/* #Subscribe
+================================================== */
+.subscribe {
+  position: relative;
+}
+
+.subscribe .img img,
+.subscribe .img picture {
+  width: 100%;
+}
+
+.subscribe .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: 8.33vw;
+  width: 33.75vw;
+}
+
+.subscribe h2 {
+  line-height: 1;
+  margin-bottom: .5vw;
+}
+
+.subscribe p {
+  margin: 0 auto;
+  width: 24.73vw;
+  margin-bottom: 1vw;
+}
+
+.subscribe .input-primary {
+  margin: 0 auto;
+  width: 15.625vw;
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 1.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .subscribe .text {
+    top: 116vw;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 87%;
+  }
+  
+  .subscribe h2 {
+    margin-bottom: 2vw;
+  }
+  
+  .subscribe p {
+    width: 100%;
+    margin-bottom: 4vw;
+  }
+  
+  .subscribe .input-primary {
+    width: 78.66vw;
+    margin-bottom: 8vw;
+  }
+}
+
+/* #Banner Video
+================================================== */
+.banner-video {
+  position: relative;
+}
+
+.banner-video video {
+  width: 100%;
+  height: 33.85vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-video h1 {
+  margin-bottom: 1.5vw;
+}
+
+@media (min-width: 1024px) {
+  .banner-video .text {
+    color: white;
+    position: absolute;
+    top: 13.5vw;
+    right: 7.4vw;
+    width: 34.63vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .banner-video video {
+    height: 115vw;
+  }
+
+  .banner-video .text {
+    text-align: center;
+    padding: 7.33vw 8.8vw;
+  }
+  
+  .banner-video h1 {
+    margin-bottom: 1.5vw;
+  }
+}
+
+/* #Blog
+================================================== */
+.blog {
+  padding: 4vw 0 5.2vw 0;
+}
+
+.blog .tab-navigation {
+  margin-bottom: 4.16vw;
+  display: flex;
+  justify-content: center;
+}
+
+.blog .tab-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 23.7vw;
+  margin: 0 -.25vw;
+}
+
+.blog .tab-btn {
+  height: 2.44vw;
+  border: 3px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 .46vw;
+  margin: 0 .25vw;
+  font-weight: 900;
+  border-radius: 4px;
+  margin-bottom: .5vw;
+}
+
+.blog .tab-btn.active {
+  color: white;
+  background-color: black;
+}
+
+.blog-slider {
+  padding-right: 7.3vw;
+  overflow: hidden;
+}
+
+.blog-slider:not(:last-child) {
+  margin-bottom: 5.2vw;
+}
+
+.blog-slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7.3vw;
+  margin-bottom: 1vw;
+}
+
+.blog-slider .swiper {
+  overflow: visible;
+}
+
+.blog-slider .swiper-slide {
+  padding-left: 1.5vw;
+}
+
+.blog-card .img img {
+  width: 100%;
+  height: 27vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-card .text {
+  padding-top: 1vw;
+}
+
+.blog-card .text p {
+  margin-bottom: .6vw;
+}
+
+.blog-card .text a {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.blog-card .text a:last-child {
+  margin-top: 1vw;
+  text-decoration: none;
+}
+
+.blog-card .text a img {
+  width: .88vw;
+  margin-left: .5vw
+}
+
+.blog-slider .swiper-horizontal>.swiper-pagination-progressbar,
+.blog-slider.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.blog-slider.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.blog-slider.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  width: 41.14vw;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  top: auto;
+  margin-left: 5.2vw;
+}
+
+.blog-slider .swiper-pagination-progressbar {
+  background: #EDEDED;
+}
+
+.blog-slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: black;
+}
+
+@media (min-width: 1024px) {
+  .blog-slider .swiper-pagination-progressbar {
+    display: none!important;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .blog-slider .swiper-horizontal>.swiper-pagination-progressbar,
+  .blog-slider.swiper-pagination-progressbar.swiper-pagination-horizontal,
+  .blog-slider.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+  .blog-slider.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 60vw;
+    margin-right: 5.7vw;
+  }
+
+  .blog .tab-navigation ul {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .blog .tab-btn {
+    height: 10.4vw;
+    padding: 0 3.6vw;
+    margin: 0 1vw;
+    margin-bottom: 2vw;
+  }
+
+  .blog {
+    padding: 8.66vw 0 21.33vw 0;
+  }
+
+  .blog-slider {
+    padding-right: 5.7vw;
+    position: relative;
+    padding-bottom: 13.33vw;
+  }
+  
+  .blog-slider:not(:last-child) {
+    margin-bottom: 13.33vw;
+  }
+  
+  .blog-slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 2vw;
+    padding-left: 5.7vw;
+  }
+
+  .blog-slider-nav a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .blog-slider .swiper {
+    overflow: visible;
+    padding-bottom: 10vw;
+  }
+  
+  .blog-slider .swiper-slide {
+    padding-left: 6.65vw;
+  }
+  
+  .blog-card .img img {
+    height: 77.7vw;
+  }
+  
+  .blog-card .text {
+    padding-top: 4.66vw;
+  }
+  
+  .blog-card .text p {
+    margin-bottom: 1vw;
+    line-height: 1.25;
+  }
+  
+  .blog-card .text a:last-child {
+    margin-top: 4vw;
+  }
+  
+  .blog-card .text a img {
+    width: 3.46vw;
+    margin-left: 2vw
   }
 }

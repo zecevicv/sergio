@@ -3281,7 +3281,7 @@ body {
 
 .about .year {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 13.38vw;
@@ -3289,6 +3289,7 @@ body {
   color: white;
   text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.3);
   line-height: 1;
+  z-index: 10;
 }
 
 /* One Img Section */
@@ -3435,7 +3436,7 @@ body {
   }
 
   .about .section.one-img .year {
-    top: 23vw;
+    top: 30vw;
     transform: translateX(-50%);
   }
   
@@ -3465,7 +3466,7 @@ body {
   }
 
   .about .section.two-img .year {
-    top: 51%;
+    top: 35%;
   }
   
   /* Three Img Section */

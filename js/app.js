@@ -180,4 +180,73 @@ if (document.querySelector('.about')) {
       }
     };
   }
+
+  // Animations
+  const sections = document.querySelectorAll('.about .section');
+
+  sections.forEach((section) => {
+    const year = section.querySelector('.year');
+    const sectionImgs = section.querySelectorAll('img');
+
+    gsap.to(year, {
+      yPercent: 25,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        scrub: true
+      },
+    });
+
+    sectionImgs.forEach((img, index) => {
+      // Two Imgs
+      if (section.classList.contains('two-img')) {
+        if (index == 0) {
+          gsap.to(img, {
+            yPercent: -25,
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              scrub: true
+            },
+          });
+        } 
+
+        if (index == 1) {
+          gsap.to(img, {
+            yPercent: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              scrub: true
+            },
+          });
+        }
+      }
+
+      if (section.classList.contains('three-img')) {
+        if (index == 1) {
+          gsap.to(img, {
+            yPercent: -25,
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              scrub: true
+            },
+          });
+        } 
+  
+        if (index == 2) {
+          gsap.to(img, {
+            yPercent: -25,
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              scrub: true
+            },
+          });
+        } 
+      }
+    });
+  });
+
 }

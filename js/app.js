@@ -126,3 +126,58 @@ if (document.querySelector('.course-page .sticky-button-desktop')) {
     }
   })
 }
+
+/* #About Page ScrollSpy
+  ======================================================= */
+if (document.querySelector('.about')) {
+  // Handling link clicks
+  const scrollSpyLinks = document.querySelectorAll('.about .scroll-spy a');
+  scrollSpyLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+  
+      const id = link.hash;
+      let yOffset = 0;
+  
+      if (window.innerWidth > 1024) {
+        yOffset = -100;
+      } else {
+        yOffset = -175;
+      }
+      
+      const element = document.querySelector(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+      window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
+  
+  // ScrollSpy
+  let section = document.querySelectorAll(".about .section");
+  if (section) {
+    let sections = {};
+    let i = 0;
+    
+    Array.prototype.forEach.call(section, function(e) {
+      sections[e.id] = e.offsetTop;
+    });
+    
+    window.onscroll = function() {
+      let scrollPosition = 0;
+
+      if (window.innerWidth > 1024) {
+        scrollPosition = (document.documentElement.scrollTop || document.body.scrollTop) + 250;
+      } else {
+        scrollPosition = (document.documentElement.scrollTop || document.body.scrollTop) - 200;
+      }
+
+    
+      for (i in sections) {
+        if (sections[i] <= scrollPosition) {
+          document.querySelector('.about .scroll-spy .active').setAttribute('class', ' ');
+          document.querySelector('.about .scroll-spy a[href*=' + i + ']').setAttribute('class', 'active');
+        }
+      }
+    };
+  }
+}

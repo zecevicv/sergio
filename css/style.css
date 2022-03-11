@@ -63,6 +63,7 @@ body {
 
 .btn.btn-small span {
   padding: 0 .78vw;
+  width: 100%;
 }
 
 /* Primary */
@@ -245,6 +246,10 @@ body {
   .btn.btn-small span {
     padding: 0 4vw;
     height: 8.66vw;
+  }
+
+  .btn.btn-small {
+    padding: 0;
   }
 
 }
@@ -3505,5 +3510,109 @@ body {
 
   .about .section.three-img .year {
     top: 45%;
+  }
+}
+
+/* #Contact Popup
+================================================== */
+#contactPopup {
+  align-items: center;
+  justify-content: center;
+}
+
+#contactPopup.show {
+  display: flex;
+}
+
+#contactPopup .popup-content {
+  width: 17.5vw;
+  padding: 2vw 1.8vw 1.5vw 1.8vw;
+  text-align: center;
+  position: relative;
+}
+
+#contactPopup h2 {
+  margin-bottom: 1vw;
+}
+
+#contactPopup input {
+  margin-bottom: 1.3vw;
+  text-align: center;
+}
+
+#contactPopup select {
+  margin-bottom: 1.3vw;
+  text-align: center;
+}
+
+#contactPopup .btns {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8vw;
+  margin-top: .5vw;
+}
+
+#contactPopup .btn {
+  height: 2.6vw;
+  font-size: .94vw;
+}
+
+#contactPopup .btn span {
+  width: 100%;
+}
+
+#contactPopup .btn:first-child {
+  margin-bottom: .5vw;
+}
+
+#contactPopup .popup-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+
+#contactPopup .popup-close img {
+  width: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  #contactPopup .popup-content {
+    width: 73.33%;
+    padding: 9.33vw 8vw 8vw 8vw;
+  }
+  
+  #contactPopup h2 {
+    margin-bottom: 3.33vw;
+  }
+  
+  #contactPopup input {
+    margin-bottom: 5.33vw;
+  }
+  
+  #contactPopup select {
+    margin-bottom: 5.33vw;
+  }
+  
+  #contactPopup .btns {
+    margin-bottom: 6.65vw;
+    margin-top: 2vw;
+  }
+  
+  #contactPopup .btn {
+    height: 11.6vw;
+    font-size: 4vw;
+  }
+  
+  #contactPopup .btn:first-child {
+    margin-bottom: 2vw;
+  }
+  
+  #contactPopup .popup-close {
+    top: 4vw;
+    right: 4vw;
+  }
+  
+  #contactPopup .popup-close img {
+    width: 4vw;
   }
 }

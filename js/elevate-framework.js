@@ -1,6 +1,6 @@
 /* #Global
   ======================================================= */
- const body = document.querySelector('body');
+const body = document.querySelector('body');
 
 /* #Tabs
   ======================================================= */
@@ -8,8 +8,8 @@ const tabs = document.querySelectorAll('.tabs');
 
 if (tabs) {
   tabs.forEach((tab) => {
-    const tabBtns = tab.querySelectorAll('.tab-btn');
-    const tabPanels = tab.querySelectorAll('.tab-panel');
+    const tabBtns = tab.querySelectorAll(':scope > .tab-navigation .tab-btn');
+    const tabPanels = tab.querySelectorAll(':scope > .tab-content > ul > .tab-panel');
 
     tabBtns.forEach((tabBtn) => {
       tabBtn.addEventListener('click', (e) => {
@@ -181,48 +181,72 @@ function isInViewport(el) {
 
 /* #Popup
   ======================================================= */
-  const popups = document.querySelectorAll('.popup');
-  const popupTogglers = document.querySelectorAll('.popup-toggler');
-  const popupClosers = document.querySelectorAll('.popup-close');
-  const popupBackdrops = document.querySelectorAll('.popup-backdrop');
-  
-  if (popups && popupTogglers) {
-    popups.forEach((popup) => {
-      gsap.set(popup, {
-        display: 'flex'
-      });
-  
-      popup.addEventListener('click', (e) => {
-        if (!e.target.closest('.popup-content')) {
-          body.classList.remove('no-scroll');
-          popup.classList.remove('show');
-        }
-      });
+const popups = document.querySelectorAll('.popup');
+const popupTogglers = document.querySelectorAll('.popup-toggler');
+const popupClosers = document.querySelectorAll('.popup-close');
+const popupBackdrops = document.querySelectorAll('.popup-backdrop');
+
+if (popups && popupTogglers) {
+  popups.forEach((popup) => {
+    gsap.set(popup, {
+      display: 'flex'
     });
-  
-    popupTogglers.forEach((toggler) => {
-  
-      toggler.addEventListener('click', (e) => {
-        e.preventDefault();
-  
-        const popup = document.querySelector(toggler.dataset.popup);
-  
-        body.classList.add('no-scroll');
-        popup.classList.add('show');
-      });
-    });
-  }
-  
-  if (popupClosers) {
-    popupClosers.forEach((closer) => {
-      closer.addEventListener('click', (e) => {
-        e.preventDefault();
-  
-        const popup = closer.closest('.popup');
-  
+
+    popup.addEventListener('click', (e) => {
+      if (!e.target.closest('.popup-content')) {
         body.classList.remove('no-scroll');
         popup.classList.remove('show');
-  
-      })
+      }
     });
-  }
+  });
+
+  popupTogglers.forEach((toggler) => {
+
+    toggler.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const popup = document.querySelector(toggler.dataset.popup);
+
+      body.classList.add('no-scroll');
+      popup.classList.add('show');
+    });
+  });
+}
+
+if (popupClosers) {
+  popupClosers.forEach((closer) => {
+    closer.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const popup = closer.closest('.popup');
+
+      body.classList.remove('no-scroll');
+      popup.classList.remove('show');
+
+    })
+  });
+}
+
+/* #ScrollTo Links
+======================================================= */
+const scrollToLinks = document.querySelectorAll('.scroll-to-link');
+
+scrollToLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const id = link.hash;
+    let yOffset = 0;
+
+    if (window.innerWidth > 1024) {
+      yOffset = -95;
+    } else {
+      yOffset = -100;
+    }
+    
+    const element = document.querySelector(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({top: y, behavior: 'smooth'});
+  });
+});

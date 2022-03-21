@@ -1,5 +1,9 @@
 /* #Header
   ======================================================= */
+const header = document.querySelector('.header');
+const headerSearch = document.querySelector('.header .search');
+const headerClose = document.querySelector('.header .close');
+
 // Top Slider
 if (document.querySelector('.header .top .swiper')) {
   new Swiper(".header .top .swiper", {
@@ -8,6 +12,24 @@ if (document.querySelector('.header .top .swiper')) {
       nextEl: ".header .top .next",
       prevEl: ".header .top .prev",
     },
+  });
+}
+
+// Search
+if (headerSearch) {
+  headerSearch.addEventListener('click', (e) => {
+    header.classList.add('show-search');
+
+    if (header.classList.contains('show-menu')) {
+      hamburgerBtn.classList.remove('is-active');
+      header.classList.remove('show-menu');
+      body.classList.remove('no-scroll');
+    }
+  });
+
+
+  headerClose.addEventListener('click', (e) => {
+    header.classList.remove('show-search');
   });
 }
 

@@ -394,8 +394,136 @@ body {
   margin-left: 1vw;
 }
 
-.header-search {
+.header .search img {
   width: 1.35vw;
+}
+
+/* Search */
+.header-search {
+  position: fixed;
+  top: 3.125vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  color: #242424;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+  z-index: 1000;
+}
+
+.header.show-search .header-search {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-search .top {
+  background-color: white;
+}
+
+.header-search .top .container,
+.header-search .bottom .container {
+  width: 42.7%;
+}
+
+.header-search .top {
+  height: 5.2vw;
+  position: relative;
+  z-index: 1;
+}
+
+.header-search .top .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-search .top form {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  height: 3.125vw;
+  border: 1px solid #A8A8A8;
+  padding: 0 1.5vw;
+}
+
+.header-search .top form a {
+  margin-left: 1.14vw;
+}
+
+.header-search .top form a img {
+  width: 1.3vw;
+}
+
+.header-search .top form input {
+  background-color: white;
+  color: #242424;
+  border: none;
+  flex-grow: 1;
+}
+
+.header-search .top form input::placeholder {
+  color: #242424;
+}
+
+.header-search .bottom {
+  padding: 3.9vw 0 5.2vw 0;
+  background-color: rgba(255,255,255,.88);
+}
+
+.header .search-results {
+  display: none;
+  width: 100%;
+}
+
+.header .search-results li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .78vw 0;
+}
+
+.header .search-results li:not(:last-child) {
+  border-bottom: 1px solid #BEBEBE;
+}
+
+.header .search-results a {
+  display: flex;
+  align-items: center;
+  padding-bottom: .25vw;
+}
+
+.header .search-results a img {
+  width: .5vw;
+}
+
+.header-search h2 {
+  margin-bottom: 1.14vw;
+}
+
+.header-search .close {
+  margin-right: 1.5vw;
+}
+
+.header-search .close img {
+  width: 1.04vw;
+}
+
+.header .search-suggestions {
+  /* display: none; */
+  width: 100%;
+}
+
+.header .search-suggestions ul {
+  list-style: initial;
+  padding-right: 19px;
+}
+
+.header .search-suggestions a {
+  display: flex;
+  align-items: center;
+  margin-bottom: .25vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -435,6 +563,8 @@ body {
 
   .header-hamburger {
     margin-left: 4.8vw;
+    position: relative;
+    z-index: 100000;
   }
 
   .header-hamburger img {
@@ -455,6 +585,96 @@ body {
     margin-left: 0;
     margin-right: 1vw;
   }
+
+    /* Search */
+    .header-search {
+      top: 10.66vw;
+    }
+
+    .header-search .container {
+      width: auto;
+    }
+  
+    .header-search .top {
+      height: 14.93vw;
+    }
+  
+    .header-search .top .container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 0 18.66vw 0 6vw;
+    }
+  
+    .header-search .top form {
+      height: 8vw;
+      padding: 0 4vw;
+      margin-left: auto;
+    }
+  
+    .header-search .top form a {
+      margin-left: 3vw;
+      flex-shrink: 0;
+    }
+  
+    .header-search .top form a img {
+      width: 3vw;
+    }
+  
+    .header-search .bottom {
+      padding: 8.66vw 0 13.33vw 0;
+    }
+  
+    .header-search .bottom .container {
+      width: 88%;
+    }
+  
+    .header .search-results {
+      display: none;
+      width: 100%;
+    }
+  
+    .header .search-results li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2vw 0;
+    }
+  
+    .header .search-results a {
+      margin-top: 0;
+      margin-right: auto;
+      padding-bottom: 0;
+    }
+  
+    .header .search-results a img {
+      width: 1.6vw;
+      margin-right: 0;
+    }
+  
+    .header-search h2 {
+      margin-bottom: 2vw;
+    }
+  
+    .header-search .close {
+      margin-left: 0;
+      margin-right: 5.33vw;
+    }
+  
+    .header-search .close img {
+      width: 4.66vw;
+    }
+  
+    .header .search-suggestions {
+      display: block;
+      width: 100%;
+      padding-right: 15%;
+    }
+  
+    .header .search-suggestions a {
+      margin-bottom: 1vw;
+    }
 }
 
 /* #Footer

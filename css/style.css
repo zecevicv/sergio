@@ -257,12 +257,13 @@ body {
 /* #Swiper Arrows
 ================================================== */
 .swiper-arrows img {
-  width: .5vw;
+  width: .5vw!important;
+  height: auto!important;
 }
 
 @media (max-width: 1023.98px) {
   .swiper-arrows img {
-    width: 2vw;
+    width: 2vw!important;
   }
 }
 
@@ -1628,6 +1629,11 @@ body {
 
 .media-box .text > div {
   width: 24vw;
+}
+
+.media-box .text h2 {
+  line-height: 1.1;
+  margin-bottom: 1vw;
 }
 
 .media-box .text p {
@@ -3934,5 +3940,234 @@ body {
   .team ul .text img {
     width: 6.65vw;
     margin: 0 auto;
+  }
+}
+
+/* #Salon Page Media Boxes
+================================================== */
+.salon-page .media-boxes .swiper-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.34vw;
+}
+
+.salon-page .media-boxes .swiper-arrows .prev {
+  margin-left: 1.5vw;
+}
+
+.salon-page .media-box .img img {
+  height: 35.5vw;
+  object-fit: cover;
+}
+
+.salon-page .media-box .img {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .salon-page .media-boxes {
+    margin-bottom: 13.33vw;
+  }
+
+  .salon-page .media-box {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 5.33vw;
+  }
+
+  .salon-page .media-box .text {
+    padding: 13.33vw 0 8vw 0;
+    text-align: center!important;
+  }
+  
+  .media-box .text > div {
+    width: 100%;
+  }
+
+  .salon-page .media-box .img img {
+    height: 58.6vw;
+  }
+
+  .salon-page .media-boxes .swiper-arrows {
+    margin-top: 7.5vw;
+  }
+  
+  .salon-page .media-boxes .swiper-arrows .prev {
+    margin-left: 6vw;
+  }
+
+  .salon-page .media-boxes h2 {
+    margin-bottom: 1.5vw;
+  }
+}
+
+/* #Prices
+================================================== */
+.prices {
+  padding-top: 5.2vw;
+  position: relative;
+}
+
+.prices h2 {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+/* Tabs Primary */
+.prices .tabs-primary > .tab-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices .tabs-primary > .tab-navigation .tab-btn {
+  opacity: .23;
+  border-bottom: 3px solid transparent;
+  transition: all .4s ease;
+}
+
+.prices .tabs-primary > .tab-navigation .tab-btn:not(:last-child) {
+  margin-left: 4vw;
+}
+
+.prices .tabs-primary > .tab-navigation .tab-btn.active {
+  opacity: 1;
+  border-color: black;
+}
+
+.prices .tabs-primary-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.prices .tabs-primary-img img {
+  width: 100%;
+  height: 35.14vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tabs Secondary */
+.prices .tabs-secondary > .tab-navigation {
+  margin: 2vw 0 0 0;
+}
+
+.prices .tabs-secondary > .tab-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -.25vw;
+}
+
+.prices .tabs-secondary > .tab-navigation .tab-btn {
+  height: 2.44vw;
+  border: 3px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 .46vw;
+  margin: 0 .25vw;
+  font-weight: 900;
+  border-radius: 4px;
+  margin-bottom: .5vw;
+}
+
+.prices .tabs-secondary > .tab-navigation .tab-btn.active {
+  color: white;
+  background-color: black;
+}
+
+/* Table */
+.prices .price-table {
+  width: 26.82vw;
+  margin-right: 10vw;
+  padding-top: 5.88vw;
+  padding-bottom: 5.2vw;
+  min-height: 36.45vw;
+}
+
+.prices .price-table table {
+  width: 100%;
+}
+
+.prices .price-table table { 
+  border-collapse: collapse; 
+}
+
+.prices .price-table tr:first-child th {
+  padding-bottom: 1.7vw;
+}
+
+.prices .price-table tr:not(:first-child) {
+  border-bottom: 1px solid #70707023;
+}
+
+.prices .price-table tr td {
+  padding: .5vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .prices {
+    padding-top: 0;
+  }
+  
+  .prices h2 {
+    margin-bottom: 80vw;
+  }
+  
+  /* Tabs Primary */
+  .prices .tabs-primary > .tab-navigation .tab-btn:not(:last-child) {
+    margin-left: 8vw;
+  }
+
+  .prices .tabs-primary-img {
+    bottom: auto;
+    top: 20vw;
+    left: 0;
+    width: 100%;
+  }
+  
+  .prices .tabs-primary-img img {
+    height: 64.26vw;
+  }
+  
+  /* Tabs Secondary */
+  .prices .tabs-secondary > .tab-navigation {
+    margin: 7.33vw 0 0 0;
+  }
+  
+  .prices .tabs-secondary > .tab-navigation ul {
+    margin: 0 -1vw;
+  }
+  
+  .prices .tabs-secondary > .tab-navigation .tab-btn {
+    height: 10.33vw;
+    padding: 0 4vw;
+    margin: 0 1vw;
+    margin-bottom: 3.33vw;
+  }
+  
+  /* Table */
+  .prices .price-table {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10vw;
+    padding-bottom: 16.66vw;
+    min-height: 0;
+  }
+  
+  .prices .price-table tr:first-child th {
+    padding-bottom: 2vw;
+  }
+  
+  .prices .price-table tr td {
+    padding: 2vw 0;
   }
 }

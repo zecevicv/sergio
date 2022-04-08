@@ -45,6 +45,18 @@ if (document.querySelector('.home-banner-4 .swiper')) {
   });
 }
 
+/* #Salon Page Media Boxes
+  ======================================================= */
+if (document.querySelector('.salon-page .media-boxes .swiper')) {
+  new Swiper(".salon-page .media-boxes .swiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".salon-page .media-boxes .next",
+      prevEl: ".salon-page .media-boxes .prev",
+    },
+  });
+}
+
 /* #AOS Animations
     ======================================================= */
 AOS.init({

@@ -17,6 +17,10 @@ body {
   color: #CF0020;
 }
 
+.text-gray {
+  color: #959595;
+}
+
 .strike-through {
   text-decoration: line-through;
 }
@@ -4189,6 +4193,10 @@ body {
   margin-bottom: 2.6vw;
 }
 
+.job-page .jobs .heading {
+  width: 100%;
+}
+
 .jobs .collapsible {
   box-shadow: 0 6px 35px rgba(0, 0, 0, .06);
   border-radius: 1vw;
@@ -4451,5 +4459,215 @@ body {
   .jobs .social img {
     width: 6.93vw;
     height: 5.6vw;
+  }
+}
+
+/* #Job
+================================================== */
+.job {
+  padding: 2.6vw 0 5.2vw 0;
+}
+
+.job .container {
+  width: 57%;
+}
+
+.job .container > p {
+  margin-bottom: 2.6vw;
+}
+
+.job .icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2vw 0 3.5vw 0;
+}
+
+.job .icons p {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5vw;
+}
+
+.job .icons img {
+  height: 1.3vw;
+  margin-left: 1vw;
+}
+
+.job .icons a {
+  display: flex;
+  align-items: center;
+}
+
+.job .icons a img {
+  width: .55vw;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .job {
+    padding: 13.33vw 0 2.66vw 0;
+  }
+  
+  .job .container {
+    width: 86%;
+  }
+  
+  .job .container > p {
+    margin-bottom: 6.65vw;
+    line-height: 1.4;
+  }
+
+  .job h2 {
+    text-align: center;
+  }
+  
+  .job .icons {
+    margin: 7.33vw 0 8.93vw 0;
+  }
+
+  .job .icons p {
+    margin-left: 6.65vw;
+  }
+  
+  .job .icons img {
+    height: 4.66vw;
+    margin-left: 2.66vw;
+  }
+
+  .job .icons a img {
+    width: 2vw;
+    margin-right: 2vw;
+    margin-left: 0;
+  }
+}
+
+/* #Job Popup
+================================================== */
+#jobPopup .popup-content {
+  width: 48%;
+  border-radius: 1vw;
+  position: relative;
+  padding: 4.94vw 10.15vw;
+}
+
+#jobPopup .popup-close {
+  position: absolute;
+  top: 1.8vw;
+  left: 1.8vw;
+}
+
+#jobPopup .popup-close img {
+  width: 1.5vw;
+}
+
+#jobPopup .heading {
+  text-align: center;
+  width: 21.875vw;
+  margin: 0 auto;
+  margin-bottom: 1.3vw;
+}
+
+#jobPopup .heading h2 {
+  margin-bottom: .5vw;
+}
+
+#jobPopup .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2vw;
+}
+
+#jobPopup .pdf-link {
+  display: flex;
+  align-items: baseline;
+}
+
+#jobPopup .pdf-link img {
+  width: 1.45vw;
+  margin-right: .5vw;
+}
+
+#jobPopup form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#jobPopup form input {
+  flex: 0 0 47.5%;
+  margin-bottom: 1.3vw;
+}
+
+#jobPopup label {
+  display: block;
+  width: 100%;
+  padding-bottom: .5vw;
+}
+
+#jobPopup textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid black;
+}
+
+@media (max-width: 1023.98px) {
+  #jobPopup .popup-content {
+    width: 86%;
+    border-radius: 2.66vw;
+    padding: 13.33vw 5.33vw;
+  }
+  
+  #jobPopup .popup-close {
+    top: 4vw;
+    left: auto;
+    right: 4vw;
+  }
+  
+  #jobPopup .popup-close img {
+    width: 4vw;
+  }
+  
+  #jobPopup .heading {
+    width: 100%;
+    margin-bottom: 4vw;
+    padding: 0 3vw;
+  }
+  
+  #jobPopup .heading h2 {
+    margin-bottom: 1vw;
+  }
+  
+  #jobPopup .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6vw;
+  }
+
+  #jobPopup .pdf-link {
+    margin-bottom: 10.66vw;
+  }
+  
+  #jobPopup .pdf-link img {
+    width: 5.33vw;
+    margin-right: 2vw;
+  }
+  
+  #jobPopup .btn {
+    margin: 0 auto;
+  }
+
+  #jobPopup form {
+    display: block;
+  }
+  
+  #jobPopup form input {
+    margin-bottom: 4vw;
+  }
+  
+  #jobPopup label {
+    padding-bottom: 2vw;
   }
 }

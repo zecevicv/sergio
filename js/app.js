@@ -33,6 +33,16 @@ if (headerSearch) {
   });
 }
 
+// Menu
+const headerBtn = document.querySelector('.header-hamburger');
+
+headerBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  header.classList.toggle('show');
+  body.classList.toggle('no-scroll');
+});
+
 /* #Home Banner 4
   ======================================================= */
 if (document.querySelector('.home-banner-4 .swiper')) {
